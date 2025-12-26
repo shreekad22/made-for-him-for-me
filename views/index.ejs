@@ -292,10 +292,12 @@
 #jersey-grid,
 #WISHLIST div,
 #BAG div {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 🔥 FIXED 4 */
-  gap: 16px;                             /* 🔥 LESS GAP */
-  align-items: start;
+    display: flex;
+    /* grid-template-columns: repeat(4, 1fr); */
+    gap: 16px;
+    align-items: center;
+    flex-direction: column;
+}
 }
 
 /* =========================
@@ -881,5 +883,6 @@
 </body>
 
 </html> 
+
 
 
