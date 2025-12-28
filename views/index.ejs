@@ -292,14 +292,15 @@
 #jersey-grid,
 #WISHLIST div,
 #BAG div {
-    display: flex;
-    /* grid-template-columns: repeat(4, 1fr); */
-    gap: 16px;
-    align-items: center;
-    flex-direction: column;
+  display: flex;
+ flex-direction:column ;/* 🔥 FIXED 4 */
+  gap: 16px;                             /* 🔥 LESS GAP */
+  align-items: center;
 }
+#WISHLIST div{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
 }
-
 /* =========================
    PRODUCT CARD (MAIN)
 ========================= */
@@ -529,7 +530,7 @@
         class="fixed top-0 left-0 w-full z-50 py-4 px-6 md:flex md:items-center md:justify-center text-gray-900 bg-white">
         <div class="flex items-center justify-between w-full md:w-auto">
             <div class="md:hidden flex items-center">
-              
+                <button id="mobile-menu-toggle" class="mr-4">☰</button>
             </div>
 
             <a href="#" id="home-link"
@@ -568,7 +569,13 @@
                 <button id="mobile-menu-close" class="text-gray-600">✕</button>
             </div>
         </div>
-     
+        <nav class="p-6 space-y-4">
+            <a href="#" class="block" data-page="home">HOME</a>
+            <a href="#" class="block" data-page="women">WOMEN</a>
+            <a href="#" class="block" data-page="men">MEN</a>
+            <a href="#" class="block" data-page="wishlist">WISHLIST</a>
+            <a href="#" class="block" data-page="bag">BAG</a>
+        </nav>
     </div>
 
     <main class="mt-20">
@@ -877,9 +884,3 @@
 </body>
 
 </html> 
-
-
-
-
-
-
