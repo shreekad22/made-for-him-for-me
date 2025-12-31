@@ -530,7 +530,7 @@ if (wishlistBtn) {
 });
 
 /************* Mobile menu toggles *************/
-document.getElementById('mobile-menu-toggle').addEventListener('click', () => {
+document.getElementById('mobile-menu-toggle').addEventListener('', () => {
     document.getElementById('mobile-menu').classList.remove('-translate-x-full');
 });
 document.getElementById('mobile-menu-close').addEventListener('click', () => {
@@ -559,3 +559,4 @@ window.addEventListener('popstate', (event) => {
     const page = event.state && event.state.page ? event.state.page : 'home';
     renderPage(page, false);
 });
+
